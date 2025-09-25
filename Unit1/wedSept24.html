@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Lesson 2: Links, Images and Text Formatting</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        body {
+            font-family: 'Press Start 2P', monospace;
+            background: linear-gradient(45deg, #0f0f0f, #1a1a2e);
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            border: 3px solid #ffff00;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+        }
+        
+        .nav-links {
+            background: rgba(255, 255, 0, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 2px solid #ffff00;
+        }
+        
+        .nav-links a {
+            color: #ffff00;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 8px 15px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .nav-links a:hover {
+            background: #ffff00;
+            color: #000;
+            border-color: #ffff00;
+            transform: scale(1.05);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ff6b6b;
+            text-shadow: 2px 2px 0px #000;
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { text-shadow: 2px 2px 0px #000; }
+            50% { text-shadow: 4px 4px 8px #ff6b6b; }
+            100% { text-shadow: 2px 2px 0px #000; }
+        }
+        
+        h2 {
+            color: #4ecdc4;
+            font-size: 16px;
+            margin: 30px 0 20px 0;
+            text-transform: uppercase;
+            border-bottom: 2px solid #4ecdc4;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-left: 5px solid #9c27b0;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 10px;
+            line-height: 1.6;
+        }
+        
+        .retro-comment {
+            color: #666;
+            font-size: 8px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #666;
+        }
+        
+        .image-container {
+            background: rgba(255, 255, 255, 0.05);
+            border: 3px solid #ff9ff3;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(255, 159, 243, 0.3);
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+        
+        .image-placeholder {
+            background: rgba(255, 99, 107, 0.2);
+            border: 3px dashed #ff636b;
+            padding: 40px;
+            border-radius: 15px;
+            color: #ff636b;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px rgba(255, 99, 107, 0.5);
+            }
+            to {
+                box-shadow: 0 0 20px rgba(255, 99, 107, 0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="https://www.google.com" target="_blank">Google</a>
+            <a href="about.html">About Me</a>
+            <a href="wedSept24.html">Wednesday Notes</a>
+        </div>
+
+        <div class="retro-comment">
+            <!-- Absolute URL - gives you a direct path somewhere on the internet -->
+        </div>
+
+        <h1>HTML Lesson 2: Links, Images and Text Formatting</h1>
+        
+        <p>HyperLinks are created using the anchor tag</p>
+        
+        <h2>🖼️ Images</h2>
+        
+        <div class="image-container">
+            <img src="city.jpg" alt="Man walking in city">
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sit officiis cum. Laudantium reiciendis dolore incidunt reprehenderit vitae eaque quia id, cum voluptate facilis similique quam molestias esse. Maiores, culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat, eligendi assumenda, quis aperiam, dolorum quisquam aliquam maxime cumque soluta maiores veritatis ullam provident? Laborum debitis vero laudantium maxime at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro voluptas natus amet nostrum enim dolorem eum dolorum dicta quam, ratione quis saepe quod iure possimus totam perferendis sapiente qui.</p>
+        
+        <div class="image-container">
+            <img src="mountains.jpg" alt="The view from above mountains" width="300" height="250">
+        </div>
+    </div>
+</body>
+</html>

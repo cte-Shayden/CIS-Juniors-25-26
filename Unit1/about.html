@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me || Shayden Sloan</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        body {
+            font-family: 'Press Start 2P', monospace;
+            background: linear-gradient(45deg, #0f0f0f, #1a1a2e);
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            border: 3px solid #ffff00;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+        }
+        
+        .nav-links {
+            background: rgba(255, 255, 0, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 2px solid #ffff00;
+        }
+        
+        .nav-links a {
+            color: #ffff00;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 8px 15px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .nav-links a:hover {
+            background: #ffff00;
+            color: #000;
+            border-color: #ffff00;
+            transform: scale(1.05);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ff6b6b;
+            text-shadow: 2px 2px 0px #000;
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { text-shadow: 2px 2px 0px #000; }
+            50% { text-shadow: 4px 4px 8px #ff6b6b; }
+            100% { text-shadow: 2px 2px 0px #000; }
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 5px solid #4ecdc4;
+            border-radius: 10px;
+        }
+        
+        .section h2 {
+            color: #4ecdc4;
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        .pets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .pet-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid #ff9ff3;
+            text-align: center;
+        }
+        
+        .pet-card h3 {
+            color: #ff9ff3;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .gaming-prefs {
+            background: rgba(156, 39, 176, 0.2);
+            border-left-color: #9c27b0;
+        }
+        
+        .goals-section {
+            background: rgba(76, 175, 80, 0.2);
+            border-left-color: #4caf50;
+        }
+        
+        .achievement {
+            background: rgba(255, 193, 7, 0.2);
+            border: 3px solid #ffc107;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .achievement h3 {
+            color: #ffc107;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .achievement a {
+            color: #81c784;
+            text-decoration: underline;
+            font-size: 10px;
+        }
+        
+        .achievement a:hover {
+            color: #a5d6a7;
+            text-shadow: 0 0 10px #81c784;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            border-left: 3px solid #ff6b6b;
+        }
+        
+        li:before {
+            content: "★ ";
+            color: #ffff00;
+            font-weight: bold;
+        }
+        
+        .horror-emphasis {
+            color: #ff5722;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .age-highlight {
+            color: #00bcd4;
+            font-weight: bold;
+        }
+        
+        .birthday {
+            color: #e91e63;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="https://www.google.com" target="_blank">Google</a>
+            <a href="about.html">About Me</a>
+            <a href="wedSept24.html">Wednesday Notes</a>
+            <a href="thursSept25.html">Thursday Notes</a>
+        </div>
+
+        <h1>About Me: Shayden Sloan</h1>
+        
+        <div class="section">
+            <h2>Who Am I?</h2>
+            <p>Hiya! I'm <span class="age-highlight">16 years old</span> and my birthday is on <span class="birthday">January 20th</span>. I'm a student at Colton School (CPCS).<br> <br>I live with my grandparents.</p>
+            
+            <p>My hobbies are gaming (obvoiusly. who doesnt love gaming.), watching anime, coding, and reading and writing.</p>
+            
+            <p>My favoite genre of game is Indie psychological horror, or turn based rpgs.</p>
+        </div>
+
+        <div class="section">
+            <h2>My Animal Family</h2>
+            <div class="pets-grid">
+                <div class="pet-card">
+                    <h3>🐕 Maizie</h3>
+                    <p>I have a Havapoo (Havanese<br>and Poodle mix) dog.</p>
+                </div>
+                <div class="pet-card">
+                    <h3>🐱 Chester</h3>
+                    <p>My cat is a Savanah.</p>
+                </div>
+                <div class="pet-card">
+                    <h3>🐢 Reggie</h3>
+                    <p>My painted turtle is pretty old. She's 18 years old.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section gaming-prefs">
+            <h2>Gaming Preferences</h2>
+            <p>Gaming has always been a part of my life, almost as much as reading.</p>
+            
+            <ul>
+                <li><strong>UNDERTALE/DELTARUNE</strong> - These games changed everything for me. They built my way of seeing games and storys. UNDERTALE even had it's 10th Anniverary a couple days ago.</li>
+                <li><strong>Psychological Horror RPGs</strong> - for some reason, game's like that are comforting to me. For Example: Project Kat and Paper Lily, I really love those.</li>
+                <li><span class="horror-emphasis">NO CHEAP JUMPSCARES!</span> - I jump easily and honestly? It just pisses me off.</li>
+                <li><strong>Top-Down RPG Style</strong> - There's something perfect about the classic overhead games that i really like a lot, like earthbound and rpgmaker games.</li>
+                <li><strong>Indie Games</strong> - Indie games really give me the atmosphere that i like the most.</li>
+            </ul>
+        </div>
+
+        <div class="section goals-section">
+            <h2>My Goals</h2>
+            <p><strong>Above all else</strong>, my biggest goal this year is undertanding GML and C++. These languages are what GameMaker and Kristal uses, and those are what i use for my game making.</p>
+            
+            <p>Any other languages couldn't hurt to learn becuse why not?</p>
+            
+            <p>My ultimate dream is to pass this class so i can create an UNDERTALE/DELTARUNE-inspired game that captures the same magic and emotional depth that drew me to those masterpieces in the first place.</p>
+        </div>
+
+        <div class="achievement">
+            <h3>🎮 Current Project: DELTARUNE Mod</h3>
+            <p>I'm actively developing a DELTARUNE modification that adds new content and experiences to the beloved universe!</p>
+            <a href="https://charadreemurr1st.github.io/DELTARUNE-_Crosscut/" target="_blank">Check out DELTARUNE: Crosscut →</a>
+        </div>
+
+        <div class="achievement">
+            <h3>📚 Published Author Achievement Unlocked!</h3>
+            <p>I've officially become a published author! My book "The Chronicles of Grim Greaser" is available for purchase.</p>
+            <a href="https://www.barnesandnoble.com/w/the-chronicles-of-grim-greaser-shayden-sloan/1147262522" target="_blank">Buy on Barnes & Noble →</a>
+        </div>
+    </div>
+</body>
+</html>
